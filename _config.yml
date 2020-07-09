@@ -1,11 +1,11 @@
 # Site settings
 title: Mokka Engineer | A mokka website
 description: "It's a description change it later"
-url: "http://www.jacoporabolini.com/emerald"
+url: "http://www.mokkaengineer.site"
 author:
   name: "Sharath Kumar"
   email: "sharathtrueengineer@gmail.com"
-  url: "http://www.sharathtrueengineer.com"
+  url: "http://www.mokkaengineer.site"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
