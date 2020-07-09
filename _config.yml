@@ -1,14 +1,14 @@
 # Site settings
-title: Emerald | A simple Jekyll blog
-description: "A minimal blog template, build with Jekyll."
+title: Mokka Engineer | A mokka website
+description: "It's a description change it later"
 url: "http://www.jacoporabolini.com/emerald"
 author:
-  name: "Jacopo Rabolini"
-  email: "hello@jacoporabolini.com"
-  url: "http://www.jacoporabolini.com"
+  name: "Sharath Kumar"
+  email: "sharathtrueengineer@gmail.com"
+  url: "http://www.sharathtrueengineer.com"
 
 # Build settings
-baseurl: /emerald # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /home # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
