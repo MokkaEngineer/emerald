@@ -1,5 +1,4 @@
-
-  ## Social Media
+## Social Media
 
 <br>
 <br>
