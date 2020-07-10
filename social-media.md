@@ -71,18 +71,7 @@ button:hover span {
   }
 }
 </style>
-<script>
-  function face()
-  {
-  document.getElementById('content').innerHTML='';
-  }
-  
-  function twit()
-  {
-  document.getElementById('content').innerHTML='<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a>';
-  }
- 
-</script>
+
 
 
 <button onclick="face()">
