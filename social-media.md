@@ -73,6 +73,8 @@ button:hover span {
 {display:block}
 #content1
 {display:none}
+#content
+{display:none}
 </style>
 
 
