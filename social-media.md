@@ -4,18 +4,6 @@
 <br>
 <br>
 <style>
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 button {
   position: relative;
