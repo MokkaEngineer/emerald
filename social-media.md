@@ -1,5 +1,8 @@
 ## Social Media
 
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="tlMdQku1"></script> 
 <br>
 <br>
 <style>
@@ -73,7 +76,7 @@ button:hover span {
 
 <script>
   function face()
-  {document.getElementById('content').innerHTML="face";}
+  {document.getElementById('content').innerHTML='<div class="fb-page" data-href="https://www.facebook.com/1852074921741384/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/1852074921741384/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/1852074921741384/">Mokka Engineer</a></blockquote></div>';}
   
   function twit()
   {document.getElementById('content').innerHTML="twit";}
@@ -93,4 +96,4 @@ button:hover span {
 </button>
 &nbsp;
 <div id="content">
-  <a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+  <a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div></body>
