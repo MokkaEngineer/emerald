@@ -79,8 +79,7 @@ button:hover span {
   function twit()
   {document.getElementById('content').innerHTML='<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a>';}
   
-  function inst()
-  {document.getElementById('content').innerHTML="inst";}
+
   </script>
 
 <button onclick="face()">
@@ -98,6 +97,4 @@ button:hover span {
   <div class="fb-page" data-href="https://www.facebook.com/1852074921741384/" data-tabs="timeline" data-width="600" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/1852074921741384/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/1852074921741384/">Mokka Engineer</a></blockquote></div>
    </div>
    
-<div id="content">
- 
-   </div>
+
