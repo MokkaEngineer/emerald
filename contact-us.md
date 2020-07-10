@@ -1,4 +1,4 @@
-## Contact US
+## Contact Us
 
 For Queries about Promotions & Collaborations:
 📧 mokkaengineerofficial@gmail.com
