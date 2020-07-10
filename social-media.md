@@ -20,7 +20,6 @@ body {
   margin: 0;
   display: grid;
   place-items: center;
-  background: linear-gradient(296.91deg, #3f3547 3.73%, #7D81A4 97.68%); 
 }
 
 .multi-button {
@@ -135,4 +134,4 @@ input[type="checkbox"] {
 <br>
 
 <br>
-<a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--<a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
