@@ -1,6 +1,5 @@
 ## Social Media
 
-<body>
 
 <br>
 <br>
@@ -96,4 +95,4 @@ button:hover span {
 &nbsp;
 
 <div id="content"><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a>
-   </div></body>
+   </div>
