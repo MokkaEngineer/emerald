@@ -82,7 +82,6 @@ button:hover span {
 <button>
   <span>Instagram</span>
 </button>
-<br>
-
-<br>
-<div id=content><a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+</br></br>
+<div id="content">
+  <a class="twitter-timeline" href="https://twitter.com/MokkaEngineers?ref_src=twsrc%5Etfw">Tweets by MokkaEngineers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
