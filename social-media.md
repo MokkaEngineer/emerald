@@ -1,5 +1,5 @@
-## Social Media
-
+<center>## Social Media
+</center>
 <br>
 <br>
 <style>
