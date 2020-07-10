@@ -71,15 +71,24 @@ button:hover span {
 }
 </style>
 
+<script>
+  function face()
+  {document.getElementById('content').innerHTML="face";}
+  
+  function twit()
+  {document.getElementById('content').innerHTML="twit";}
+  
+  function inst()
+  {document.getElementById('content').innerHTML="inst";}
+  </script>
 
-
-<button>
+<button onclick="face()">
   <span>Facebook</span>
 </button>
-<button>
+<button onclick="twit()">
   <span>Twitter</span>
 </button>
-<button>
+<button onclick="inst()">
   <span>Instagram</span>
 </button>
 &nbsp;
