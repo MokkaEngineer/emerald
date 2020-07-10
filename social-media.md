@@ -2,135 +2,155 @@
 <br>
 <br>
 <style>
- * {
-  --primary-1: 230, 15%, 22%; /* Neutral */
-  --primary-2: 230, 15%, 20%; /* Dark */
-  --primary-3: 230, 15%, 18%; /* Darker */
-  --primary-4: 230, 15%, 45%; /* Lightest */
-  --secondary: 166, 69%, 81%; /* Splash of Color */
-  --transition: cubic-bezier(0.77, 0, 0.175, 1); 
-}
+$base-duration: 250ms;
+
+// Colors
+$primary: #4DB6AC;
+$accent: #46627f;
+$white: whitesmoke;
+$color-3: #bdc3c7;
+
+// Breakpoints
+$sm: 20rem;
+$med: 48rem;
+$lg: 64rem;
 
 *, *:before, *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-smooth: auto;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #444;
 }
 
 body {
-  height: 100vh;
-  margin: 0;
-  display: grid;
-  place-items: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-color: $color-3;
 }
 
-.multi-button {
-  --shadow: 286, 24%, 14%;
-  position: relative;
-  padding: .2rem;
-  background: hsl(var(--primary-1));
-  border: 1px solid hsl(var(--primary-2));  
-  box-shadow: 
-    1px 1px 1px hsla(var(--shadow),.12),
-    3px 3px 3px hsla(var(--shadow),.11), 
-    5px 5px 5px hsla(var(--shadow),.1),
-    7px 7px 7px hsla(var(--shadow),.09),
-    11px 11px 11px hsla(var(--shadow),.08),
-    13px 13px 13px hsla(var(--shadow),.07),
-    17px 17px 17px hsla(var(--shadow),.06),
-    19px 19px 19px hsla(var(--shadow),.05),
-    23px 23px 23px hsla(var(--shadow),.04),
-    29px 29px 29px hsla(var(--shadow),.03);
-  border-radius: 4px;
-  user-select: none;
+.hover {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 75px;
+	background-color: $primary;
+	border-radius: 99px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+		display: flex;
+		align-items: center;
+		width: 50%;
+		height: 100%;
+		
+		//letter-spacing: -0.0625rem;
+		transition: 0.25s linear;
+		z-index: 1;
+	}
+	&:before {
+		content: '';
+		left: 0;
+		justify-content: flex-end;
+		background-color: $primary;
+	}
+	&:after {
+		content: '';
+		right: 0;
+		justify-content: flex-start;
+		background-color: darken($primary,5%);
+	}
+	&:hover {
+		background-color: $accent;
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		span {
+			opacity: 0;
+			z-index: -3;
+		}
+		&:before {
+			opacity: 0.5;
+			transform: translateY(-100%);
+		}
+		&:after {
+			opacity: 0.5;
+			transform: translateY(100%);
+		}
+	}
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		color: $white;
+		font-family: 'Fira Mono', monospace;
+		font-size: 24px;
+		font-weight: 700;
+		opacity: 1;
+		transition: opacity 0.25s;
+		z-index: 2;
+	}
+	.social-link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 25%;
+		height: 100%;
+		color: $white;
+		font-size: 24px;
+		text-decoration: none;
+		transition: 0.25s;
+		i {
+			text-shadow: 1px 1px rgba($accent,0.7);
+			transform: scale(1.0);
+		}
+		&:hover {
+			background-color: rgba($white,0.1);
+			i {
+				animation: bounce 0.4s linear;
+			}
+		}
+	}
 }
 
-label {
-  display: inline-block;
-  position: relative;
-  padding: .8rem 1.4rem; 
-  color: #5C617B;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Poppins', 'Helvetica', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  border: none;
-  border-radius: 2px;
-  background: none;
-  transition: all .4s var(--transition); 
-  cursor: pointer;
-}
-
-span {
-  margin-right: .1rem;
-}
-
-span svg {
-  height: 16px;
-  width: 16px;
-}
-
-label:before {
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 0;
-  top: 20%;
-  left: 50%;
-  background: hsla(var(--secondary),.35);
-  border-radius: 2px;  
-  transition: all .25s var(--transition);
-}
-
-label:hover:before {
-  width: 80%;
-  left: 10%;
-  border-top: 1px solid hsl(var(--secondary));
-}
-
-input:checked + label:before {
-  height: 60%;
-  bottom: 20%;
-}
-
-input:checked + label {  
-  color: hsl(var(--secondary));
-  transition-delay: .1s;
-}
-
-input[type="checkbox"] {
-  display: none;
+@keyframes bounce {
+	40% { transform: scale(1.4); }
+	60% { transform: scale(0.8); }
+	80% { transform: scale(1.2); }
+	100% { transform: scale(1.0); }
 }
   </style>
-<div class="multi-button">
-  <input name="buttons" type="checkbox" id="cut" checked="checked">
-  <label for="cut">
-    <span><?xml version="1.0" encoding="UTF-8"?>
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="6" cy="6" r="3"/>
-        <circle cx="6" cy="18" r="3"/>
-        <line x1="20" x2="8.12" y1="4" y2="15.88"/>
-        <line x1="14.47" x2="20" y1="14.48" y2="20"/>
-        <line x1="8.12" x2="12" y1="8.12" y2="12"/>
-      </svg>
-    </span>Cut</label>
-  <input name="buttons" type="checkbox" id="copy">
-  <label for="copy">
-    <span><?xml version="1.0" encoding="UTF-8"?>
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
-        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
-      </svg>
-    </span>Copy</label>
-  <input name="buttons" type="checkbox" id="paste">
-  <label for="paste">
-    <span><?xml version="1.0" encoding="UTF-8"?>
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
-        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
-      </svg>
-    </span>Paste</label>
-</div>
 
+ div.hover
+	span Hover Me
+	a.social-link(href="https://twitter.com/twitter" target="_blank")
+		i.fab.fa-twitter
+	a.social-link(href="https://codepen.io/joshuaward/" target="_blank")
+		i.fab.fa-codepen
+	a.social-link(href="https://www.instagram.com/joshuaward/" target="_blank")
+		i.fab.fa-instagram
+	a.social-link(href="https://github.com/joshuaward" target="_blank")
+		i.fab.fa-github
 <br>
 
 <br>
