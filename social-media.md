@@ -141,16 +141,8 @@ body {
 }
   </style>
 
- div.hover
-	span Hover Me
-	a.social-link(href="https://twitter.com/twitter" target="_blank")
-		i.fab.fa-twitter
-	a.social-link(href="https://codepen.io/joshuaward/" target="_blank")
-		i.fab.fa-codepen
-	a.social-link(href="https://www.instagram.com/joshuaward/" target="_blank")
-		i.fab.fa-instagram
-	a.social-link(href="https://github.com/joshuaward" target="_blank")
-		i.fab.fa-github
+<div class="hover"><span>Hover Me</span><a class="social-link" href="https://twitter.com/twitter" target="_blank"><i class="fab fa-twitter"></i></a><a class="social-link" href="https://codepen.io/joshuaward/" target="_blank"><i class="fab fa-codepen"></i></a><a class="social-link"
+        href="https://www.instagram.com/joshuaward/" target="_blank"><i class="fab fa-instagram"></i></a><a class="social-link" href="https://github.com/joshuaward" target="_blank"><i class="fab fa-github"></i></a></div>
 <br>
 
 <br>
