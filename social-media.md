@@ -6,7 +6,7 @@
 <style>
 
 button {
-  position: relative;
+  display: inline;
   outline: none;
   text-decoration: none;
   border-radius: 50px;
@@ -26,6 +26,7 @@ button span {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.7px;
+  display: inline;  
 }
 button:hover {
   animation: rotate 0.7s ease-in-out both;
