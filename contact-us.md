@@ -2,14 +2,14 @@
 
 ## For Queries about Promotions & Collaborations:
 
-📧 mokkaengineerofficial@gmail.com
-###        (or) 
+### 📧 mokkaengineerofficial@gmail.com
 
-DM us in
-Fb/
-Insta/
-Twitter/
-@mokkaengineers
+###            (or) 
+
+###         DM us in
+   Fb/Insta/Twitter:
+### @mokkaengineers
 
 
-© 2020 MokkaEngineer.
+
+© 2020 MokkaEngineer™
