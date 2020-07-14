@@ -16,4 +16,4 @@ recoveries is continuing to be good and the numbers for the last 24 hours are th
 24 hours, taking the total number of recovered people to 97,310. There have been 41,357 samples tested, in the past 24 hours alone, taking the total tests to 1,695,365 tests, 
 which is the highest for any state in the country!
 
-> Stay Safe Everyone!!! - Mokka Engineers
+> Stay Safe Everyone!!! - Team MokkaEngineer™
