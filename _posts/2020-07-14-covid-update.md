@@ -1,5 +1,5 @@
 ---
-title:TODAY’S COVID UPDATE TAMILNADU – 4526  NEW CASES | 67 NEW DEATHS | TOTAL - 147,324  CASES & 2099 DEATHS
+title: TODAY’S COVID UPDATE TAMILNADU – 4526  NEW CASES | 67 NEW DEATHS | TOTAL - 147,324  CASES & 2099 DEATHS
 ---
 ![corona](/img/corona.png "corona")
 It is that time of the day when the official number of the COVID-19 cases are released and the situation seems to be getting steadily better in Chennai but the rest of Tamil Nadu 
